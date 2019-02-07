@@ -1,0 +1,9 @@
+---
+ - hosts: localhost
+   tasks:
+       - name: installing apache2
+         apt: name=apache2 state=present
+       - name: adding msg
+         debug: msg="kesa hi bhai m to aagya"
+         tags:
+            - apache2
