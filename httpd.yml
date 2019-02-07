@@ -1,0 +1,16 @@
+---
+ - hosts: localhost
+   tasks:
+       - name: installing vsftpd
+         apt: name=vsftpd state=present
+       - name: adding msg
+         debug: msg="kesa hi bhai m to aagya" 
+       - name: installing mariadb*
+         apt: name=mariadb* state=present
+       - name: adding msg
+         debug: msg="chal m b aagya"
+       - name: installing openssh-server
+         apt: name=openssh-server state=present
+       - name: adding msg
+         debug: msg="ruko m b aagya a to"
+
