@@ -1,0 +1,8 @@
+---
+ - hosts: localhost
+   tasks:
+      - name: create user 
+        user:
+           name: abc
+           password: $6$mysecretsalt$GcajIATSXc4CUJ.uOMrH.oB7A7dch4KSuaNfL12kfmhFZz7hH9gcttplfRfmk4rQ.sQnZieSBxqi6xPDFBGRC0"
+
